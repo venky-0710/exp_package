@@ -12,12 +12,12 @@
     "url": "git+https://github.com/YOUR_USERNAME/exp_package.git"
   },
   "scripts": {
-    "release:patch": "npm version patch && npm publish && git push && git push --tags",
-    "release:minor": "npm version minor && npm publish && git push && git push --tags",
-    "release:major": "npm version major && npm publish && git push && git push --tags",
-    "release:alpha": "npm version prerelease --preid=alpha && npm publish && git push && git push --tags",
-    "release:alpha:new": "npm version pre patch --preid=alpha && npm publish  && git push && git push --tags",
-    "release:beta": "npm version prerelease --preid=beta && npm publish  && git push && git push --tags",
-    "release:rc": "npm version prerelease --preid=rc && npm publish && git push && git push --tags"
+    "release:patch": "npm version patch -m \"Publish (v%s)\n\n - exp_package_test_v1@%s\" && npm publish && git push && git push --tags",
+    "release:minor": "npm version minor -m \"Publish (v%s)\n\n - exp_package_test_v1@%s\" && npm publish && git push && git push --tags",
+    "release:major": "npm version major -m \"Publish (v%s)\n\n - exp_package_test_v1@%s\" && npm publish && git push && git push --tags",
+    "release:alpha": "npm version prerelease --preid=alpha -m \"Publish (v%s)\n\n - exp_package_test_v1@%s\" && npm publish --tag alpha && git push && git push --tags",
+    "release:alpha:new": "npm version pre patch --preid=alpha -m \"Publish (v%s)\n\n - exp_package_test_v1@%s\" && npm publish --tag alpha && git push && git push --tags",
+    "release:beta": "npm version prerelease --preid=beta -m \"Publish (v%s)\n\n - exp_package_test_v1@%s\" && npm publish --tag beta && git push && git push --tags",
+    "release:rc": "npm version prerelease --preid=rc -m \"Publish (v%s)\n\n - exp_package_test_v1@%s\" && npm publish --tag rc && git push && git push --tags"
   }
 }
