@@ -1,6 +1,6 @@
 {
   "name": "exp_package_test_v1",
-  "version": "1.0.4-alpha.0",
+  "version": "1.0.4-alpha.1",
   "description": "A simple package ready for npm",
   "main": "index.js",
   "files": [
