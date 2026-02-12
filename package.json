@@ -15,9 +15,9 @@
     "release:patch": "npm version patch && npm publish && git push && git push --tags",
     "release:minor": "npm version minor && npm publish && git push && git push --tags",
     "release:major": "npm version major && npm publish && git push && git push --tags",
-    "release:alpha": "npm version prerelease --preid=alpha && npm publish --tag alpha && git push && git push --tags",
-    "release:alpha:new": "npm version pre patch --preid=alpha && npm publish --tag alpha && git push && git push --tags",
-    "release:beta": "npm version prerelease --preid=beta && npm publish --tag beta && git push && git push --tags",
-    "release:rc": "npm version prerelease --preid=rc && npm publish --tag rc && git push && git push --tags"
+    "release:alpha": "npm version prerelease --preid=alpha && npm publish && git push && git push --tags",
+    "release:alpha:new": "npm version pre patch --preid=alpha && npm publish  && git push && git push --tags",
+    "release:beta": "npm version prerelease --preid=beta && npm publish  && git push && git push --tags",
+    "release:rc": "npm version prerelease --preid=rc && npm publish && git push && git push --tags"
   }
 }
